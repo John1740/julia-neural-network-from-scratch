@@ -1,0 +1,8 @@
+/tests/
+/prepared_data/*
+/raw_data/*
+/trained_networks/*
+
+!/prepared_data/.gitkeep
+!/raw_data/.gitkeep
+!/trained_networks/.gitkeep
