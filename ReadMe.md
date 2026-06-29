@@ -1,6 +1,6 @@
 # learnProject_ANN_Network
 
-This repository contains a small artificial neural network written from scratch in Julia. It implements mini-batch training with forward propagation, backpropagation, ReLU hidden layers, sigmoid or softmax output layers, and stochastic gradient descent. The project was intended for learning the underlying math and for comparing the scaling of equivalent CPU, GPU, and kernel-fused GPU implementations.
+This repository contains a small artificial neural network written from scratch in Julia. It implements mini-batch training with backpropagation and stochastic gradient descent in configurable network architectures for binary and multi class decision problems. The project was intended for learning the underlying math and for comparing the scaling of equivalent CPU, GPU, and kernel-fused GPU implementations.
 
 <p align="center">
 <img src="visualisation/network_architecture.png" width="700"><br>
@@ -94,8 +94,7 @@ Overall, the experiments show that GPU training scales significantly better than
 The benchmark scripts and the depth and epoch scaling plots are in `visualisation/`. Run a quick sweep with:
 
 ```bash
-julia visualisation/run_scaling_benchmarks.jl --quick
+julia visualisation/run_scaling_benchmarks.jl
 julia visualisation/plot_scaling_benchmarks.jl
 ```
 
-Remove `--quick` for the complete benchmark sweep.
